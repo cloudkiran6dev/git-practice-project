@@ -195,3 +195,5 @@ Sets default upstream branch.
 After this, future pushes become simpler:
 
 git push
+
+Day 2: Learning branching.
