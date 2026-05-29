@@ -196,4 +196,75 @@ After this, future pushes become simpler:
 
 git push
 
-Day 2: Learning branching.
+Step 12 — Make Changes
+
+Update notes.txt
+
+Day 2:
+Learning branching.
+🔹 Step 13 — Check Changes
+git status
+
+You will see:
+
+modified: notes.txt
+
+Meaning:
+Git detected file changes.
+
+🔹 Step 14 — Commit New Changes
+git add .
+git commit -m "Updated notes for day 2"
+🔹 Step 15 — Push Again
+git push
+
+Now GitHub gets latest changes.
+
+🔹 Step 16 — Create a Branch
+git branch feature-header
+What is a branch?
+
+A separate workspace.
+
+Why?
+
+Developers work independently without breaking main code.
+
+🔹 Step 17 — Switch Branch
+git checkout feature-header
+
+OR newer method:
+
+git switch feature-header
+🔹 Step 18 — Make Branch Changes
+
+Edit README:
+
+## Features
+- Daily notes
+- Git practice
+🔹 Step 19 — Commit Branch Changes
+git add .
+git commit -m "Added features section"
+🔹 Step 20 — Merge Branch to Main
+
+Switch back:
+
+git checkout master
+
+OR
+
+git switch main
+
+Then merge:
+
+git merge feature-header
+🔹 What exactly is merge?
+
+Combining branch changes into main branch.
+
+🔹 Step 21 — Push Final Changes
+git push
+
+Now GitHub has merged code.
+
