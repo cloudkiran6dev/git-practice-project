@@ -1,2 +1,197 @@
-Day 1 :
-Learning Basics
+Day 1 : Learning Basics
+
+Step 1 — Create a Project Folder
+What are we doing? 
+         Creating a folder on your local machine.
+    Why? 
+        Git tracks files inside a folder called a repository (repo).
+# Command - mkdir git-practice-project
+
+Step 2 — Move Into the Folder
+# Command cd git-practice-project
+    What is this?
+        Changes your current location to that folder.
+    Why?
+        All Git commands should run inside the project folder.
+
+Step 3 — Open VS Code
+#Command code .
+    What is this?
+        Opens current folder in VS Code.
+
+    Why?
+        Easy to create and edit files.
+
+Meaning
+. means “current folder”
+
+Step 4 — Initialize Git
+#command git init
+
+    What exactly is happening?
+Git creates a hidden .git folder.
+
+    Why?
+        That .git folder stores:
+            commit history
+            branch info
+            tracking information Without this, Git cannot track files.
+Real Meaning You are telling Git: “Start monitoring this project.”
+
+Step 5 — Create Files
+
+Create these:
+
+README.md
+notes.txt
+What is README.md?
+
+README.md is the project explanation file.
+
+Every real project has this.
+
+Example Content
+README.md
+# Daily Notes App
+
+This is my Git practice project.
+notes.txt
+Day 1:
+Learning Git basics.
+🔹 Step 6 — Check Git Status
+git status
+What is this?
+
+Shows:
+
+changed files
+new files
+deleted files
+Why?
+
+Git does NOT automatically save files.
+
+You must tell Git what to track.
+
+You will see
+Untracked files:
+README.md
+notes.txt
+Meaning
+
+Git sees files, but is NOT tracking them yet.
+
+🔹 Step 7 — Add Files to Staging Area
+git add .
+VERY IMPORTANT CONCEPT
+
+Git has 3 stages:
+
+Working Directory
+       ↓
+Staging Area
+       ↓
+Repository (Commit)
+What is “git add” exactly?
+
+It moves files into the staging area.
+
+Why staging exists?
+
+Because developers may want:
+
+only some files committed
+review changes before saving
+Meaning of .
+.
+
+means:
+
+“Add everything in current folder”
+
+🔹 Step 8 — Commit the Files
+git commit -m "Initial commit"
+What exactly is commit?
+
+A commit is:
+
+a saved checkpoint
+a project snapshot
+version history point
+Why commits matter?
+
+You can:
+
+rollback changes
+track history
+see who changed what
+recover deleted code
+Meaning of -m
+-m
+
+means message.
+
+Example:
+
+"Initial commit"
+
+describes what changed.
+
+🔹 Step 9 — Create GitHub Repository
+
+Go to:
+
+GitHub Official Website
+
+Create repository
+
+Name:
+
+git-practice-project
+
+DO NOT:
+
+add README
+add gitignore
+
+because local project already exists.
+
+🔹 Step 10 — Connect Local Repo to GitHub
+
+GitHub will show commands.
+
+Example:
+
+git remote add origin https://github.com/USERNAME/git-practice-project.git
+What is happening?
+
+You are linking:
+
+local machine
+WITH
+GitHub remote repository
+Important Terms
+Term	Meaning
+local repo	your computer
+remote repo	GitHub
+origin	nickname for GitHub repo
+🔹 Step 11 — Push Code to GitHub
+git push -u origin master
+
+OR maybe:
+
+git push -u origin main
+
+(depending on branch name)
+
+What is push?
+
+Uploading commits from local machine → GitHub.
+
+Meaning of -u
+
+Sets default upstream branch.
+
+After this, future pushes become simpler:
+
+git push
